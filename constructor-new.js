@@ -43,10 +43,7 @@ console.log(users2.isAdmin)
 users2.sayHi();
 
 // 즉, 생성자는 재사용 할 수 있는 객체 생성 코드를 구현하는것이다.
-
-
 // ex
-
 
 function Calculator(a,b){
     
