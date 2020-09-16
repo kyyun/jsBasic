@@ -30,3 +30,35 @@ let doublePrices = Object.fromEntries(
 );
 
 console.log(doublePrices); // { banana: 2, orange: 4, meat: 8 }
+
+// 프로퍼티 값 더하기
+
+function sumSalaries(obj) {
+
+
+    return Object.values(obj).reduce((a,b)=> a+b);
+    // let v = 0;
+    // for(let i of Object.values(obj)){
+    //     v +=i;
+    // }
+    // return v;
+}
+
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+  };
+  
+console.log( sumSalaries(salaries) );
+
+// 프로퍼티 개수 세기
+function count(obj) {
+    return Object.keys(obj).length;
+}
+let user3 = {
+    name: 'John',
+    age: 30
+  };
+  
+console.log( count(user3) ); // 2
